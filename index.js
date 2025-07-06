@@ -6,7 +6,7 @@ const app = express()
 app.use(cors())
 app.use(express.json())
 
-const openai = new OpenAI({ apiKey: 'your-api-key-here' })
+const openai = new OpenAI({ apiKey: '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' })
 
 app.post('/api/hint', async (req, res) => {
   const { problem } = req.body
